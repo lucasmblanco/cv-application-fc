@@ -1,0 +1,154 @@
+@use '../App.scss'; 
+$base-color: #4e3f77; 
+$base-color-light: #a384f7;
+$base-color-lighter: #a384f71c;
+
+
+div#new-window-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div.curriculum{
+    display: flex;
+    flex-wrap: wrap;
+    
+div.line-container{
+    padding: 20px; 
+    height: 10px;
+    flex-basis: 100%;
+
+    hr{
+        border: 0;
+        clear:both;
+        display:block;
+        width: 100%;               
+        background-color:$base-color-light;
+        height: 5px
+    }
+}
+    
+
+    div.name-heading{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; 
+        height: 200px;
+      
+        
+        h1{
+            font-family: 'Inter-ExtraBold', Arial, Helvetica, sans-serif;
+            font-size: 45px;
+            padding-left: 20px;
+            color: $base-color;
+        }
+    }
+    
+
+    div.container-information-contact{
+        display: flex;
+        flex-wrap: wrap;
+        height: 60px;
+        flex-basis: 100%;
+
+        div.container-information{
+            display: flex;
+            flex-basis: 100%;
+            align-items: center;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            
+
+            div.icon-information{
+                padding: 5px;
+            }
+
+            div.information-contact{
+                padding: 5px;
+            }
+        }
+    } 
+    
+    
+    div.field-container{
+        flex-basis: 100%;
+
+        div.field-name{
+            padding-left: 20px;
+            
+
+            h2{
+                font-family: 'Inter-SemiBold', Arial, Helvetica, sans-serif;
+                color: $base-color-light;
+                font-size: 20px;
+            }
+
+            
+        }
+        div.experience-field, div.education-field{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            padding: 20px;
+            height: 70px;
+
+            
+            div.company-name, div.institution-name{
+                display: flex;
+                align-items: center;
+                flex-basis: 60%;
+                font-family: 'Inter-Medium', Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                
+            }
+            div.company-position, div.institution-title{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end; 
+                flex-basis: 20%;
+               
+                font-size: 15px;
+              
+
+            }
+            div.company-date-from, div.institution-from{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-basis: 9%;
+                font-family: 'Inter-Medium', Arial, Helvetica, sans-serif;
+                font-size: 10px;
+               
+            }
+
+            div.separation{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-basis: 2%;
+            }
+            div.company-date-to, div.institution-to{
+                display: flex;
+                align-items: center;
+                flex-basis: 9%;
+                font-family: 'Inter-Medium', Arial, Helvetica, sans-serif;
+                font-size: 10px;
+               
+            }
+            div.company-task{
+                display: flex;
+                align-items: center;
+                flex-basis: 100%;
+                background-color: $base-color-lighter;
+                font-size: 12px;
+                padding: 5px;
+                font-family: 'Inter-Italic', Arial, Helvetica, sans-serif;
+            }
+        }
+        div.education-field{
+            height: 30px;
+        }
+    }
+}

@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("./assets/Inter-ExtraBold.woff2") format("woff2"),
+         url("./assets/Inter-ExtraBold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./assets/Inter-Regular.woff2") format("woff2"),
+         url("./assets/Inter-Regular.woff") format("woff");
+  }  
+
+  @font-face {
+    font-family: 'Inter-SemiBold';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("./assets/Inter-SemiBold.woff2") format("woff2"),
+         url("./assets/Inter-SemiBold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter-Medium';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./assets/Inter-Medium.woff2") format("woff2"),
+         url("./assets/Inter-Medium.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Inter-Italic';
+    font-style:  italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./assets/Inter-Italic.woff2") format("woff2"),
+         url("./assets/Inter-Italic.woff") format("woff");
+  }
+
+div.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+    h1 {
+        font-size: 30px;
+        font-family: 'Inter-ExtraBold', helvetica;
+        color: rgb(231, 46, 93)
+    }
+
+   
+}
+
+
+
+div.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form{
+        margin: 10px;
+        position: relative;
+        width: 600px;
+        border: 5px solid rgb(231, 46, 93);
+        padding: 20px;
+        border: 5px solid rgb(231, 46, 93);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+
+        fieldset{
+            display: flex;
+            flex-wrap: wrap;
+            font-family: 'Inter', helvetica;
+            color: rgb(231, 46, 93); 
+            border: 2px solid rgba(102, 102, 102, 0.2);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            padding: 10px; 
+
+
+            p{
+                position: relative;
+                width: 100%;
+                padding: 0 10px 20px 10px;
+                color: rgb(102, 102, 102);
+                font-size: 10px;
+                text-align: center;
+
+            }
+
+            &.education-field, &.experience-field {
+                flex-wrap: wrap;
+            }
+            
+            
+            button{
+                font-family: 'Inter', Arial, Helvetica, sans-serif;
+                background-color: #3dc96e;
+                color: white;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                border: none;
+                padding: 2px 5px;
+
+                &.education-field{
+                    background-color: #e43b24;
+
+                    &:hover{
+                        background-color: #ff533c;
+                    }
+                }
+
+                &.experience-field{
+                    background-color: #e43b24;
+
+                    &:hover{
+                        background-color: #ff533c;
+                    }
+                }
+
+                &:hover{
+                    background-color: #45e67d;
+                }
+            }
+            
+            legend{
+                font-family: 'Inter-ExtraBold', helvetica;
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 2px;
+            }
+
+
+            &.basic-information{
+                display: flex;
+                
+                label{
+                    
+                    text-align: center;
+                    flex-basis: 33.33%;
+                    
+                   
+                }
+            }
+
+           
+            
+            input{
+                margin: 2px;
+                border: 2px solid rgba(102, 102, 102, 0.2);
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                padding: 2px;
+                width: 170px;
+
+                &.date{
+                    font-family: "Inter", Arial, Helvetica, sans-serif;
+                    text-align: center;
+                }
+
+                &:focus{
+                    border: 2px solid rgb(231, 46, 93);
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                    outline: none;
+                }
+
+                &::selection{
+                    background-color: rgb(231, 46, 93);
+                    color: white; 
+                }
+                
+            }
+
+            div.button-container{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+           div.education-form-container, div.experience-form-container{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            justify-content: center;
+
+                label{
+                    text-align: center;
+                    display: block;
+                    flex-basis: 35%;
+                }   
+            
+            
+                div.container-button-delete{
+                    
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+                }
+           }
+        }
+
+
+        div.container-submit-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 10px 0 10px;
+
+            button{
+                font-family: 'Inter-ExtraBold', Arial, Helvetica, sans-serif;
+                background-color: rgb(231, 46, 93);
+                color: white;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                border: none;
+                padding: 3px 5px;
+
+                &:hover{
+                    background-color: rgb(247, 70, 114);
+                }
+            }
+        }
+    }
+}
+
