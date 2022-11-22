@@ -1,3 +1,5 @@
+$assetPath: "./assets/"; 
+
 @font-face {
     font-family: 'Inter-ExtraBold';
     font-style:  normal;
@@ -43,6 +45,17 @@
          url("./assets/Inter-Italic.woff") format("woff");
   }
 
+body{
+    margin: 0 auto;
+    background-image: url(#{$assetPath}/background.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
 div.title{
     display: flex;
     align-items: center;
@@ -75,6 +88,7 @@ div.form-container{
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
+        backdrop-filter: blur(100px);
 
         fieldset{
             display: flex;
